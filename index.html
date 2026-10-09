@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="./IMG/logo-header.png" alt="logo-cabecalho-mario" />
+        <a>Home</a>
+        <a onclick="mostrarform()">Fale Conosco</a>
+        <a href="servicos.html">Nossos Serviços</a> <!-- CORREÇÃO: Removido o 'e' extra de Serviços -->
+    </div>
+
+    </div>
+    <div class="caixa-principal">
+        <div class="caixa-info-texto">
+            <img src="./logo.png" alt="logo-site-mario" class="logo-mario">
+
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button onclick="mostrarform()">Entre em Contato</button>
+        </div>
+
+        <!-- CORREÇÃO: Removido espaço desnecessário e organizada a estrutura -->
+        <div>
+            <img src="./IMG/mario.png" alt="imagem-mario-luigi" class="logo-luigi-mario">
+        </div> <!-- CORREÇÃO: Aqui estava <div> em vez de </div> -->
+    </div>
+
+    <!-- Sugestão: Adicionado controles/autoplay para o vídeo funcionar na tela -->
+    <div class="caixa-video">
+        <video src="./IMG/video.mp4" autoplay loop muted></video>
+
+        <!-- CORREÇÃO: Sintaxe correta da div com a classe dentro dos sinais < > -->
+        <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-link-whatsapp">
+        <a href="https://wa.me/5531995765495?text=Quero%20um%20servi%C3%A7o." class="link-whatsapp">
+            <img src="./IMG/whatsapp.png" />
+        </a>
+    </div>
+
+    <form 
+    class="formulario" 
+    action="https://formcarry.com/s/IUyn8k5njtj" 
+    method="POST" 
+    enctype="multipart/form-data"
+    >
+    
+
+        <input placeholder="Seu Nome" type="text" name="Nome" />
+        <input placeholder="Seu e-mail" type="email" name="email" />
+        <textarea placeholder="Digite seu pedido aqui."  name="pedido"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderform()"></div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
